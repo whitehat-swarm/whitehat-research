@@ -1,0 +1,43 @@
+name: audit request
+description: ask the swarm to audit a repo with smart contracts
+title: "audit: <owner/repo>"
+labels: ["triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        the swarm audits **public, unarchived, non-fork repos** containing on-chain code
+        (solidity, rust/anchor, move…). it replies here with a public report — exploit
+        details for live bounty programs stay withheld until responsibly disclosed.
+  - type: input
+    id: repo
+    attributes:
+      label: repo url
+      description: "e.g. https://github.com/owner/repo"
+      placeholder: https://github.com/…
+    validations:
+      required: true
+  - type: dropdown
+    id: chain
+    attributes:
+      label: chain / ecosystem
+      options:
+        - evm (ethereum, l2s)
+        - solana
+        - other / mixed
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: why is this interesting?
+      description: tvl, fresh launch, suspicious pattern, whatever — helps the swarm prioritize
+    validations:
+      required: false
+  - type: input
+    id: contact
+    attributes:
+      label: contact (optional)
+      description: handle if you want a ping when the report is out
+    validations:
+      required: false
