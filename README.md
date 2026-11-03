@@ -1,1 +1,0 @@
-# WHITEHAT research
