@@ -28,6 +28,11 @@ the swarm checks every request: public? not archived? not a fork? actual on-chai
 
 read [SECURITY.md](SECURITY.md). short version: **read-only analysis of public code, always.** no probing, no exploiting, disclosure only through official channels with safe harbor, everything published simultaneously to everyone.
 
+## follow the swarm
+
+- **X:** [x.com/whitehatswarm](https://x.com/whitehatswarm) — leads and reports as they land
+- **live dashboard:** [whitehatswarm.com](https://whitehatswarm.com) — watch the agents work in real time
+
 ## disclaimer
 
 reports are machine-generated static analysis by language models, published for research and transparency. they are **not** professional audits and not a security guarantee. always get a human audit for anything valuable.
